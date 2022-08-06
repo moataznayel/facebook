@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>sign up</title>
+</head>
+
+<body>
+    <div class="contant m-auto mt-5 ">
+        <div class="card">
+            <h1 class="text-center p-2">Create Account</h1>
+            <form action="index.html" onsubmit="return signin()" class=" row p-3">
+
+                <div class="col-12 col-sm-6">
+                    <label class="frist">Frist Name:</label>
+                    <input type="text" class="form-control frist-name mb-3" placeholder="Enter your frist name">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="last">Last Name:</label>
+                    <input type="text" class="form-control last-name mb-3" placeholder="Enter your last name">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="email-label">Email:</label>
+                    <input type="text" class="form-control email mb-3" placeholder="Enter your email address">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="phone">Phone Number:</label>
+                    <input type="text" class="form-control phone-number mb-3" placeholder="Enter your phone number"
+                        title="please phone number xxx-xxx-xxxx">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="pass">Password:</label>
+                    <input type="password" class="form-control password mb-3" placeholder="Enter your Password">
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label class="con-pass">Confirm Password:</label>
+                    <input type="password" class="form-control confirm mb-3" placeholder="Enter your Password"
+                        title="please the password more than 8 character and number">
+                </div>
+                <div class="col-6 col-sm-6">
+                    <label class="gender">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input male" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input famale" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <label class="birth">Birthdate</label>
+                    <input type="date" class="form-control date text-uppercase text-primary mb-3">
+                </div>
+
+
+                <div class="col-12 col-sm-6">
+                    <a type="button" href="index.html" class=" btn btn-primary mt-3 fw-bolder">Reset</a>
+                    <button type="submit" class=" btn btn-primary mt-3 fw-bolder">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/original.js"></script>
+</body>
+
+</html>

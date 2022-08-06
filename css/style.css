@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #edf0f5;
+}
+.container{
+    height: 100vh;
+}
+.create{
+    background-color: #42b72a;
+    color: white;
+}
+/* .text{
+    width: 500px;
+    
+   
+} */
+/* .card{
+    border-radius: 10px ;
+} */
+.contant{
+    width: 50%;
+}
+@media (max-width:991px) {
+    .contant{
+    width: 90%;
+    }
+}
+.contant h1{
+    background-color: #1877f2;
+    color: white;
+}
+label{
+    color: #1877f2;
+    font-weight: bolder;
+    
+}
+.cont{
+    background-color: #1877f2;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hallo{
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+   
+}
+@media (max-width:500px) {
+    .hallo{
+        font-size: 5rem;
+    }
+}
