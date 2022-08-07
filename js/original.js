@@ -1,10 +1,13 @@
 let emailcheck = /\S+@\S+\.\S+/;
 let phonecheck = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
+let inputPass = document.querySelector('.passwordd');
+let textpassword = document.querySelector('.ppp');
+console.log(inputPass)
 function validation() {
     let labelEmail = document.querySelector(".emaill");
     let inputEmail = document.querySelector('.mail');
     let labelPass = document.querySelector(".ptext");
-    let inputPass = document.querySelector('.passwordd');
+
     console.log(labelEmail)
     console.log(inputEmail)
 
@@ -29,9 +32,18 @@ function validation() {
     }
 }
 
+inputPass.addEventListener('keyup', () => {
+    let x = inputPass.value.toString()
+    if (x.length < 9) {
+        textpassword.innerHTML = 'Please enter more than 8 numbers'
+        textpassword.style.color = "red"
 
+    } else {
+        textpassword.innerHTML = 'The password is strong'
+        textpassword.style.color = "blue"
+    }
 
-
+})
 
 function signin() {
     let myFrist;
